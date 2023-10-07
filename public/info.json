@@ -1,0 +1,52 @@
+[
+    {
+      "category_id": "1",
+      "total_view": 488,
+      "title": "Robotic Automation",
+      "thumbnail_img": "https://i.ibb.co/QnwC4sG/unsplash-Eh-Tc-C9s-YXsw-11.png",
+      "img": "https://i.ibb.co/h1FTJqc/assignment-9-images.png",
+      "details": "RPA technology is changing how the world gets work done.Software robots—instead of people—do repetitive and lower-value work, like logging into applications and systems, moving files and folders, extracting, copying, and inserting data, filling in forms, and completing routine analyses and reports. Advanced robots can even perform cognitive processes, like interpreting text, engaging in chats and conversations, understanding unstructured data, and applying advanced machine learning models to make complex decisions. When robots do these types of repetitive, high-volume tasks, humans are freed to focus on the things they do best and enjoy more: innovating, collaborating, creating, and interacting with customers. Enterprises get a boost too: higher productivity, efficiency, and resilience. It’s no wonder that RPA is rewriting the story of work."
+    },
+
+    {
+      "category_id": "2",
+      "total_view": 488,
+      "title": "Robotics Consulting",
+      "thumbnail_img": "https://i.ibb.co/QnwC4sG/unsplash-Eh-Tc-C9s-YXsw-11.png",
+      "img": "https://i.ibb.co/pJzVnCG/robot-chirurgien-1.jpg",
+      "details": "In this new era, where science fiction is becoming a reality, robotics and automation are no longer nebulous concepts. Incorporating automated planning has allowed manufacturing industry to advance significantly, especially in the post-COVID 19 period.The pandemic has played a key role in today’s technology-driven economy and labour market transformation, which prompts businesses to seek automation and accelerate their adoption of digital technology.At Amaris Consulting, we help organizations reap the benefits of automation and robotics by formulating cost effective plans, analysing processes, developing automated systems, and ensuring regular maintenance."
+    },
+    {
+      "category_id": "3",
+      "total_view": 488,
+      "title": "Logistics Automation",
+      "thumbnail_img": "https://i.ibb.co/QnwC4sG/unsplash-Eh-Tc-C9s-YXsw-11.png",
+      "img": "https://i.ibb.co/27977nP/Perrys-Robot-Setup-1440x810.jpg",
+      "details": "Logistics automation is the best thing that can happen in business. Unlike some other fields of activity, a large number of specialists are involved here, many processes are carried out and each stage is extremely important because it contributes to the smooth movement of goods along the chain.The benefits of logistics automation are countless saving on labor, inventory, energy and more. In addition, the logistics process is carried out faster, more precisely and qualitatively, more economically and more efficiently. It significantly reduces errors and improves customer service."
+    },
+    {
+      "category_id": "4",
+      "total_view": 488,
+      "title": "Agricultural Robotics",
+      "thumbnail_img": "https://i.ibb.co/QnwC4sG/unsplash-Eh-Tc-C9s-YXsw-11.png",
+      "img": "https://i.ibb.co/Z1nk2rg/00-TB-FARMBOTS1-super-Jumbo.jpg",
+      "details": "An agricultural robot is defined as any robotic device that can improve agricultural processes, by taking over many of the farmer’s duties that are slow or labour intensive. Using robots in agriculture makes many tasks simpler, faster, and more effective. Driverless tractors, drones for crop monitoring and data collection, autonomous precision seedings, automated irrigation and harvesting systems, as well as milking dairy herds are some of the commonly used agricultural robots used for farming, crop, and soil management, and livestock production.According to a research report “Agricultural Robots Market - Global Forecast to 2026” published by MarketsandMarkets, the global agricultural robots market size is expected to grow from USD 4.9 billion in 2021 to USD 11.9 billion by 2026, being the Asia-Pacific and North America market the ones with the highest agricultural robot market growth rate in the global market.But how robotics is changing agriculture? What are the main obstacles and potential for using robots in agriculture?"
+    },
+    {
+      "category_id": "5",
+      "total_view": 488,
+      "title": "Robotics in Medical",
+      "thumbnail_img": "https://i.ibb.co/QnwC4sG/unsplash-Eh-Tc-C9s-YXsw-11.png",
+      "img": "https://i.ibb.co/p1hNSk1/itk-medizin-roboter-doktor-digital-technologie.jpg",
+      "details": "Surgical-assistance robots are designed to enhance existing surgical treatments, including minimally invasive surgeries and orthopedic surgeries. These types of robots can be used to perform bariatric surgery and knee and hip replacement procedures, among other surgeries.Modular robots, such as therapeutic exoskeleton robots and prosthetic limbs, support rehabilitation efforts for patients with issues related to stroke, paralysis, traumatic brain injury, and multiple sclerosis. These robots can be used to monitor a patient’s form as they perform exercises, measure degrees of motion, and track progress.Service robots primarily serve healthcare professionals by completing routine logistical tasks and sending a report once a task has been completed. Tasks may include preparing patient rooms, tracking supplies, filing purchase orders, restocking medical supply cabinets, and transporting bed linens to and from laundry facilities. More and more healthcare organizations are relying on social robots to interact with patients and visitors in long-term healthcare environments. These types of robots encourage patients to follow treatment regimens, provide cognitive engagement, support patient morale, and direct visitors and patients in a healthcare facility.Mobile robots perform various tasks throughout a hospital or clinic while traveling along a wire or predefined track. Autonomous robots, on the other hand, are controlled by physicians remotely."
+    },
+    {
+      "category_id": "6",
+      "total_view": 488,
+      "title": "Retail and Hospitality",
+      "thumbnail_img": "https://i.ibb.co/QnwC4sG/unsplash-Eh-Tc-C9s-YXsw-11.png",
+      "img": "https://i.ibb.co/bKx38mK/topic-Human-robot-interaction.jpg",
+      "details": "The rise in robotics technology has dramatically impacted the hospitality industry. With the rise of AI and automation, it’s no wonder innovations are coming out in the hospitality industry. From robotic chefs to robot receptionists, it’s becoming clear that these machines are more than just a novelty; they’re here to make things easier for us humans. Robots are quickly becoming an essential part of the hospitality industry as they can automate tasks and save time for employees. Using robots in the hospitality industry increases efficiency, safety, and reliability. This blog post will discuss how robotics is changing the hospitality industry and how it can benefit businesses."
+    }
+
+  ]
