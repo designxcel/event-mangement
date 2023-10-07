@@ -32,7 +32,7 @@ const Navbar = () => {
           {menus}
         </ul>
       </div>
-      <a className="text-white normal-case text-xl">Tech Robot</a>
+      <a className="text-cyan-600 font-bold normal-case text-2xl">Tech Robot</a>
     </div>
     <div className="navbar-center hidden lg:flex">
       <ul className="menu bg-white rounded-lg menu-horizontal px-8 text-black">

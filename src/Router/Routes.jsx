@@ -5,6 +5,7 @@ import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
 import Error from "../Pages/Error/Error";
 import Details from "../Pages/Details/Details";
+import PrivateRouter from "./PrivateRouter";
 
 const Routes = createBrowserRouter([
     {
@@ -26,7 +27,7 @@ const Routes = createBrowserRouter([
             },
             {
                 path : "/details/:id",
-                element : <Details></Details>
+                element : <PrivateRouter><Details></Details></PrivateRouter>
             }
         ]
     }

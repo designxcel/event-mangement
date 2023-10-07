@@ -1,9 +1,9 @@
 import { FaGoogle } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import loginBg from '../../assets/endless.svg'
 import { useContext, useState } from "react";
 import { AuthContext } from "../../Providers/AuthProvider";
 import swal from "sweetalert";
+import Navbar from "../../Shared/Navbar/Navbar";
 
 const Register = () => {
     const {createUser} = useContext(AuthContext)
@@ -35,11 +35,12 @@ const Register = () => {
     }
     return (
         <div>
-            <div  style={{backgroundImage: `url(${loginBg})`}}>
-                <div className="hero min-h-screen">
+            <div>
+                <Navbar></Navbar>
+                <div className="hero">
                 <div className="hero-content flex-col ">
                     <div className="text-center lg:text-left">
-                    <h1 className="text-5xl font-bold text-white">Register Now!</h1>
+                    <h1 className="text-5xl font-bold text-slate-500">Register Now!</h1>
                     </div>
                     <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-gradient-to-t from-cyan-500 to-blue-500">
                     {

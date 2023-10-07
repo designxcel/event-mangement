@@ -2,6 +2,7 @@
     {
       "category_id": "1",
       "total_view": 488,
+      "price": 285,
       "title": "Robotic Automation",
       "thumbnail_img": "https://i.ibb.co/QnwC4sG/unsplash-Eh-Tc-C9s-YXsw-11.png",
       "img": "https://i.ibb.co/h1FTJqc/assignment-9-images.png",
@@ -11,6 +12,7 @@
     {
       "category_id": "2",
       "total_view": 488,
+      "price": 345,
       "title": "Robotics Consulting",
       "thumbnail_img": "https://i.ibb.co/QnwC4sG/unsplash-Eh-Tc-C9s-YXsw-11.png",
       "img": "https://i.ibb.co/pJzVnCG/robot-chirurgien-1.jpg",
@@ -19,6 +21,7 @@
     {
       "category_id": "3",
       "total_view": 488,
+      "price": 415,
       "title": "Logistics Automation",
       "thumbnail_img": "https://i.ibb.co/QnwC4sG/unsplash-Eh-Tc-C9s-YXsw-11.png",
       "img": "https://i.ibb.co/27977nP/Perrys-Robot-Setup-1440x810.jpg",
@@ -27,6 +30,7 @@
     {
       "category_id": "4",
       "total_view": 488,
+      "price": 295,
       "title": "Agricultural Robotics",
       "thumbnail_img": "https://i.ibb.co/QnwC4sG/unsplash-Eh-Tc-C9s-YXsw-11.png",
       "img": "https://i.ibb.co/Z1nk2rg/00-TB-FARMBOTS1-super-Jumbo.jpg",
@@ -35,6 +39,7 @@
     {
       "category_id": "5",
       "total_view": 488,
+      "price": 170,
       "title": "Robotics in Medical",
       "thumbnail_img": "https://i.ibb.co/QnwC4sG/unsplash-Eh-Tc-C9s-YXsw-11.png",
       "img": "https://i.ibb.co/p1hNSk1/itk-medizin-roboter-doktor-digital-technologie.jpg",
@@ -43,6 +48,7 @@
     {
       "category_id": "6",
       "total_view": 488,
+      "price": 325,
       "title": "Retail and Hospitality",
       "thumbnail_img": "https://i.ibb.co/QnwC4sG/unsplash-Eh-Tc-C9s-YXsw-11.png",
       "img": "https://i.ibb.co/bKx38mK/topic-Human-robot-interaction.jpg",

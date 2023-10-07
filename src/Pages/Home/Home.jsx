@@ -2,6 +2,8 @@ import Footer from "../../Shared/Footer/Footer";
 import Header from "../../Shared/Header/Header";
 import MainBody from "../../Shared/MainBody/MainBody";
 import Navbar from "../../Shared/Navbar/Navbar";
+
+import Showcase from "../../Shared/Showcase/Showcase";
 import background from '../../assets/bg.png'
 
 
@@ -15,6 +17,7 @@ const Home = () => {
                 </div>
             </div>
             <MainBody></MainBody>
+            <Showcase></Showcase>
             <Footer></Footer>
         </div>
     );
