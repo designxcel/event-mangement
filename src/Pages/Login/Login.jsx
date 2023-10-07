@@ -3,33 +3,51 @@ import Navbar from "../../Shared/Navbar/Navbar";
 
 import { FaGoogle } from 'react-icons/fa';
 import loginBg from '../../assets/endless.svg'
+import { useContext } from "react";
+import { AuthContext } from "../../Providers/AuthProvider";
 
 const Login = () => {
+  const {signIn} = useContext(AuthContext)
+
+  const handleLogin = e => {
+    e.preventDefault();
+    const form = new FormData(e.currentTarget);
+    const email = form.get('email');
+    const password = form.get('password');
+    
+    signIn(email, password)
+    .then(result =>{
+      console.log("successfully logged in")
+    })
+    .catch(error =>{
+      console.error(error)
+    })
+  }
   return (
     <div style={{backgroundImage: `url(${loginBg})`}}>
       <div>
-      <div className="navbar p-8 sticky top-2">
-    <div className="navbar-start">
-      <div className="dropdown">
-        <label tabIndex={0} className="btn btn-ghost lg:hidden">
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-        </label>
+        <div className="navbar p-8 sticky top-2">
+      <div className="navbar-start">
+        <div className="dropdown">
+          <label tabIndex={0} className="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+          </label>
+          
+        </div>
+        <Link to="/">
+          <h2 className="text-white normal-case text-xl">Tech Robot</h2>
+        </Link>
         
       </div>
-      <Link to="/">
-        <h2 className="text-white normal-case text-xl">Tech Robot</h2>
+      <div className="navbar-center hidden lg:flex">
+        
+      </div>
+      <div className="navbar-end">
+        <Link>
+          <button className="btn">Button</button>  
       </Link>
-      
-    </div>
-    <div className="navbar-center hidden lg:flex">
-      
-    </div>
-    <div className="navbar-end">
-      <Link>
-        <button className="btn">Button</button>  
-    </Link>
-    </div>
-  </div>
+      </div>
+        </div>
       </div>
       <div>
         <div className="hero min-h-screen">
@@ -38,7 +56,7 @@ const Login = () => {
               <h1 className="text-5xl font-bold text-white">Login now!</h1>
             </div>
             <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-gradient-to-t from-cyan-500 to-blue-500">
-              <form className="card-body w-96">
+              <form onSubmit={handleLogin} className="card-body w-96">
                 <div className="form-control">
                   <label className="label">
                     <span className="label-text">Email</span>
@@ -46,6 +64,7 @@ const Login = () => {
                   <input
                     type="email"
                     placeholder="email"
+                    name="email"
                     className="input input-bordered"
                     required
                   />
@@ -57,6 +76,7 @@ const Login = () => {
                   <input
                     type="password"
                     placeholder="password"
+                    name="password"
                     className="input input-bordered"
                     required
                   />

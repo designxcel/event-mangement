@@ -1,8 +1,38 @@
 import { FaGoogle } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import loginBg from '../../assets/endless.svg'
+import { useContext, useState } from "react";
+import { AuthContext } from "../../Providers/AuthProvider";
+import swal from "sweetalert";
 
 const Register = () => {
+    const {createUser} = useContext(AuthContext)
+    const [success,setSuccess] = useState('')
+    const [error, setError] = useState('')
+
+    const handleRegister = e =>{
+        e.preventDefault();
+        const form = new FormData(e.currentTarget);
+        const name = form.get('name');
+        const email = form.get('email');
+        const password = form.get('password');
+        
+
+        setSuccess("")
+        setError("")
+
+        createUser(email, password)
+        .then(result =>{
+           //    setSuccess(swal("Good job!", "You have successfully registered!", "success"))
+            setSuccess("You have successfully registered!")
+            
+        })
+        .catch(error =>{
+            console.error(error)
+            setError("please provide correct email/password")
+
+        })
+    }
     return (
         <div>
             <div  style={{backgroundImage: `url(${loginBg})`}}>
@@ -12,7 +42,20 @@ const Register = () => {
                     <h1 className="text-5xl font-bold text-white">Register Now!</h1>
                     </div>
                     <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-gradient-to-t from-cyan-500 to-blue-500">
-                    <form className="card-body w-96">
+                    {
+                         success && 
+                            <p 
+                                className="text-black-600 font-semibold text-center">
+                                {success}
+                            </p>
+                    }
+                    {
+                        error &&
+                        <p className="text-black-600 font-semibold text-center">
+                            {error}
+                        </p>
+                    }
+                    <form onSubmit={handleRegister} className="card-body w-96">
                     <div className="form-control">
                         <label className="label">
                             <span className="label-text">Name</span>
@@ -32,6 +75,7 @@ const Register = () => {
                         <input
                             type="email"
                             placeholder="email"
+                            name="email"
                             className="input input-bordered"
                             required
                         />
@@ -43,6 +87,7 @@ const Register = () => {
                         <input
                             type="password"
                             placeholder="password"
+                            name="password"
                             className="input input-bordered"
                             required
                         />
@@ -52,6 +97,8 @@ const Register = () => {
                         <button className="btn btn-primary">Register</button>
                         </div>
                     </form>
+
+                    
                     <div className="text-center">
                         <p>Already have an account? <span className="font-semibold text-slate-300">
                                 <Link to="/login">Login</Link>
