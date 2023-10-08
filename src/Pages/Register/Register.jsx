@@ -19,6 +19,7 @@ const Register = () => {
         const email = form.get('email');
         const password = form.get('password');
 
+
         if(password.length < 6){
             swal("warning!", "Password should be at least 6 characters", "error");
             return;
@@ -34,6 +35,7 @@ const Register = () => {
 
         setSuccess("")
         setError("")
+        
         
         
         createUser(email, password)
@@ -121,20 +123,13 @@ const Register = () => {
                     </form>
 
                     
-                    <div className="text-center">
+                    <div className="text-center mb-10">
                         <p>Already have an account? <span className="font-semibold text-slate-300">
                                 <Link to="/login">Login</Link>
                             </span></p>
                     </div>
                     
-                    <div className="text-center card-body">
-                    <hr />
-                        <p className="text-white">-----------<span>OR</span>-----------</p>
-                        <div className="flex justify-center gap-4 items-center  bg-white rounded-xl py-2">
-                            <FaGoogle></FaGoogle>
-                            <h2>Continue with Google</h2>
-                        </div>
-                    </div>
+                    
                     </div>
                 </div>
                 </div>

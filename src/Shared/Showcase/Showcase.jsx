@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import ShowItem from "./ShowItem";
 import Navbar from "../Navbar/Navbar";
+import { Link } from "react-router-dom";
 
 
 const Showcase = () => {
@@ -31,6 +32,7 @@ const Showcase = () => {
                         </button>
                     }
             </div>
+            
             
         </div>
     );

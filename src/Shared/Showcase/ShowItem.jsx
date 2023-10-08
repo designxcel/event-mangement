@@ -18,6 +18,7 @@ const ShowItem = ({item}) => {
                     </Link>
                     </div>
                 </div>
+                
             </div>
         </div>
     );
