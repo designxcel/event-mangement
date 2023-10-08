@@ -10,7 +10,7 @@ import background from '../../assets/bg.png'
 const Home = () => {
     return (
         <div>
-            <div className="h-auto" style={{backgroundImage: `url(${background})`}}>
+            <div className="h-auto bg-gradient-to-t from-[#f6f6f6] via-[#71c3f7] to-[#2c6cbc]">
                 <Navbar></Navbar>
                 <div>
                     <Header></Header>

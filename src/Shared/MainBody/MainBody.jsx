@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import bodyImage from '../../assets/bodyimage.png'
 import Service from '../../Pages/Service/Service';
 
+
 const MainBody = () => {
     const [services, setServices] = useState([]);
     useEffect(() => {

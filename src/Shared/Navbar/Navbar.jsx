@@ -16,9 +16,9 @@ const Navbar = () => {
   }
     const menus = <>
         <li><NavLink to="/">Home</NavLink></li>
-        {/* <li><NavLink to="/courses">Courses</NavLink></li> */}
         <li><NavLink to="/projects">Projects</NavLink></li>
         <li><NavLink to="/gallery">Gallery</NavLink></li>
+        <li><NavLink to="/blogs">Blogs</NavLink></li>
         <li><NavLink to="/login">Login/Register</NavLink></li>
     </>
   return (
@@ -32,7 +32,7 @@ const Navbar = () => {
           {menus}
         </ul>
       </div>
-      <a className="text-cyan-600 font-bold normal-case text-2xl">Tech Robot</a>
+      <a className="text-white font-bold normal-case text-2xl">Tech Robot</a>
     </div>
     <div className="navbar-center hidden lg:flex">
       <ul className="menu bg-white rounded-lg menu-horizontal px-8 text-black">
