@@ -15,7 +15,7 @@ const Showcase = () => {
         <div>
             
             <h2 className="text-4xl font-bold  text-center mt-20">Our Completed Robotics Project</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 p-10">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-10">
                 {
                     isShowing ?
                     showCase?.map(item => <ShowItem item={item}></ShowItem>)

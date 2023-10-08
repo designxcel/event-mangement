@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 const Service = ({service}) => {
     const {category_id, title, img, details} = service;
+    
     return (
         <div>
             <div 

@@ -6,9 +6,7 @@ import swal from "sweetalert";
 const Details = () => {
     const {id} = useParams()
     const [detailItem, setDetailItem] = useState(null)
-
     
-
     useEffect(() => {
         fetch('/info.json')
         .then (res => res.json())
@@ -22,8 +20,15 @@ const Details = () => {
     }
 
     const {category_id, title, img, details, price} = detailItem;
+    
+    const handlePurchase = () =>{
+        swal("Good job!", "Purchased Successfully", "success");  
+            
+    }
+
+
     return (
-        <div className="w-[850px] mx-auto py-8">
+        <div className="md:w-[850px] px-8 mx-auto py-8">
             <div className="flex justify-center mb-5">
                 <img className="rounded-xl" src={img} alt="" />
             </div>
@@ -39,7 +44,10 @@ const Details = () => {
                     </Link>
                 </div>
                 <div>
-                    <button className="btn bg-cyan-500">Purchase Course</button>
+                    
+                        <button onClick={handlePurchase} className="btn bg-cyan-500">Purchase Course</button>
+                    
+                    
                 </div>
             </div>
         </div>

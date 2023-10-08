@@ -9,6 +9,7 @@ import PrivateRouter from "./PrivateRouter";
 import Projects from "../Pages/Projects/Projects";
 import ProjectDetails from "../Pages/Details/ProjectDetails";
 import Courses from "../Pages/Courses/Courses";
+import Gallery from "../Pages/Gallery/Gallery";
 
 const Routes = createBrowserRouter([
     {
@@ -30,8 +31,7 @@ const Routes = createBrowserRouter([
             },
             {
                 path : "/details/:id",
-                element : <PrivateRouter><Details></Details></PrivateRouter>,
-                loader : ()=> fetch('/info.json')
+                element : <PrivateRouter><Details></Details></PrivateRouter>
             },
             {
                 path: "/projects",
@@ -44,6 +44,10 @@ const Routes = createBrowserRouter([
             {
                 path : "/courses",
                 element : <Courses></Courses>
+            },
+            {
+                path : "/gallery",
+                element : <PrivateRouter><Gallery></Gallery></PrivateRouter>
             }
         ]
     }

@@ -22,7 +22,7 @@ const ProjectDetails = () => {
     const {category_id, project_title, project_img, project_details} = projectItem;
     return (
         <div>
-            <div className="w-[850px] mx-auto py-8">
+            <div className="md:w-[850px] px-8 mx-auto py-8">
             <div className="flex justify-center mb-5">
                 <img className="rounded-xl" src={project_img} alt="" />
             </div>
@@ -32,7 +32,7 @@ const ProjectDetails = () => {
                 <Link 
                 
                 to="/">
-                    <h2 className="bg-cyan-500 w-1/4 py-2 text-center text-white rounded-xl mt-5">Back to Home page</h2>
+                    <button className="btn btn-primary mt-5 w-full">Back to Home page</button>
                 </Link>
             </div>
             <div>

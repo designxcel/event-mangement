@@ -11,12 +11,12 @@ const MainBody = () => {
     },[])
     return (
         <div className='mb-10 h-auto'>
-            <div className='flex flex-col md:flex-row items-center h-[550px]'>
-            <div className='flex-1'>
+            <div className='flex flex-col md:flex-row items-center h-auto'>
+            <div className='flex-1 p-8'>
                 <img src={bodyImage} alt="" />
             </div>
-            <div className='flex-1 space-y-4'>
-                <h2 className='bg-cyan-400 w-1/3 py-2 px-4 rounded-xl text-white'>About Robotics</h2>
+            <div className='flex-1 space-y-4 p-8'>
+                <h2 className='bg-cyan-400 md:w-1/3 py-2 px-4 rounded-xl text-white'>About Robotics</h2>
                 <h2 className='font-bold text-5xl'>Business with Robotic Solutions.</h2>
                 <p className='text-justify'>
                     The about us section provides a brief company overview. It should highlight FutureBotics' position as a leader in AI and robotics, shaping the future of intelligent automation. 
@@ -30,7 +30,7 @@ const MainBody = () => {
             </div>
             <div className='mt-10'>
                 <h2 className='font-bold text-5xl text-center mb-10'>Our Services</h2>
-                <div className='grid grid-col md:grid-cols-3 gap-6'>
+                <div className='grid grid-col md:grid-cols-2 lg:grid-cols-3 gap-6'>
                     {
                         services.map(service => <Service service={service}></Service>)
                     }

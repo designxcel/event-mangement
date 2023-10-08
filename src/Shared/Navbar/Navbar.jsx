@@ -16,7 +16,7 @@ const Navbar = () => {
   }
     const menus = <>
         <li><NavLink to="/">Home</NavLink></li>
-        <li><NavLink to="/courses">Courses</NavLink></li>
+        {/* <li><NavLink to="/courses">Courses</NavLink></li> */}
         <li><NavLink to="/projects">Projects</NavLink></li>
         <li><NavLink to="/gallery">Gallery</NavLink></li>
         <li><NavLink to="/login">Login/Register</NavLink></li>
