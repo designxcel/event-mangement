@@ -4,11 +4,13 @@ import { useContext, useState } from "react";
 import { AuthContext } from "../../Providers/AuthProvider";
 import swal from "sweetalert";
 import Navbar from "../../Shared/Navbar/Navbar";
+import { FaEye, FaEyeSlash } from 'react-icons/fa';
 
 const Register = () => {
     const {createUser} = useContext(AuthContext)
     const [success,setSuccess] = useState('')
     const [error, setError] = useState('')
+    const [viewPassword, setViewPassword] = useState(false)
 
     const handleRegister = e =>{
         e.preventDefault();
@@ -16,20 +18,34 @@ const Register = () => {
         const name = form.get('name');
         const email = form.get('email');
         const password = form.get('password');
-        
+
+        if(password.length < 6){
+            swal("warning!", "Password should be at least 6 characters", "error");
+            return;
+        }
+        else if(!/[A-Z]/.test(password)){
+            swal("Oops!", "Password should have at least one uppercase letter", "error")
+            return;
+        }
+        else if(!/[!@#$%^&*()]/.test(password)){
+            swal("Oops!", "Password should have at least one special character", "error")
+            return;
+        }
 
         setSuccess("")
         setError("")
-
+        
+        
         createUser(email, password)
         .then(result =>{
-           //    setSuccess(swal("Good job!", "You have successfully registered!", "success"))
-            setSuccess("You have successfully registered!")
+             
+            // setSuccess("You have successfully registered!")
+            swal("Good job!", "You have successfully registered!", "success")
             
         })
         .catch(error =>{
-            console.error(error)
-            setError("please provide correct email/password")
+            
+            swal("Oops!", "This account already in used!", "error")
 
         })
     }
@@ -42,7 +58,7 @@ const Register = () => {
                     <div className="text-center lg:text-left">
                     <h1 className="text-5xl font-bold text-slate-500">Register Now!</h1>
                     </div>
-                    <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-gradient-to-t from-cyan-500 to-blue-500">
+                    <div className="card flex-shrink-0 w-full shadow-2xl bg-gradient-to-t from-cyan-500 to-blue-500">
                     {
                          success && 
                             <p 
@@ -86,12 +102,17 @@ const Register = () => {
                             <span className="label-text">Password</span>
                         </label>
                         <input
-                            type="password"
+                            type={viewPassword ? "text" : "password"}
                             placeholder="password"
                             name="password"
-                            className="input input-bordered"
+                            className="input input-bordered relative"
                             required
                         />
+                        <span className="absolute right-20 mt-[52px]" onClick={() => setViewPassword(!viewPassword)}>
+                            {
+                                viewPassword ? <FaEyeSlash></FaEyeSlash> : <FaEye></FaEye>
+                            }
+                        </span>
                         
                         </div>
                         <div className="form-control mt-6">

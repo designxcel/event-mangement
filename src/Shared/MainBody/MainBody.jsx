@@ -10,7 +10,7 @@ const MainBody = () => {
         .then(data => setServices(data))
     },[])
     return (
-        <div className='mb-10'>
+        <div className='mb-10 h-auto'>
             <div className='flex flex-col md:flex-row items-center h-[550px]'>
             <div className='flex-1'>
                 <img src={bodyImage} alt="" />

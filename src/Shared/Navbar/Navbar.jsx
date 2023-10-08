@@ -16,8 +16,8 @@ const Navbar = () => {
   }
     const menus = <>
         <li><NavLink to="/">Home</NavLink></li>
-        <li><NavLink to="/services">Services</NavLink></li>
-        <li><NavLink to="/blogs">Blogs</NavLink></li>
+        <li><NavLink to="/courses">Courses</NavLink></li>
+        <li><NavLink to="/projects">Projects</NavLink></li>
         <li><NavLink to="/gallery">Gallery</NavLink></li>
         <li><NavLink to="/login">Login/Register</NavLink></li>
     </>
@@ -44,7 +44,7 @@ const Navbar = () => {
         user ?
         <button onClick={handleLogOut} className="btn btn-white">LogOut</button>
         :
-        <Link>
+        <Link to="/login">
         <button className="btn btn-white">Login</button>
       </Link>
       }

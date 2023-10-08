@@ -25,12 +25,7 @@ const Service = ({service}) => {
                             <p>{details}</p>
                         }
                         </p>
-                    {/* <div className="card-actions justify-end">
-                        
-                    <Link to = "/details">
-                        <button className="btn btn-primary w-full mt-5">Book Schedule</button>
-                    </Link>
-                    </div> */}
+                    
                 </div>
             </div>
         </div>
